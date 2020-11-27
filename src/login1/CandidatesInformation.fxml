@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="candidateinformationPane" prefHeight="700.0" prefWidth="1000.0" 
+            styleClass="root" stylesheets="@../CSS/CandidateInformation.css" 
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="login1.CandidatesInformationController">
+     <children>
+      <Label alignment="CENTER" layoutX="110.0" prefHeight="59.0" prefWidth="874.0" text="CANDIDATE INOFORMATION" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Arial Black" size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="candidate_table" layoutX="40.0" layoutY="91.0" prefHeight="400.0" prefWidth="900.0" stylesheets="@../CSS/CandidateInformation.css" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="91.0">
+        <columns>
+          <TableColumn fx:id="c_name" editable="false" prefWidth="300.0" text="Candidate Name" />
+          <TableColumn fx:id="c_sign" editable="false" minWidth="2.0" prefWidth="100.0" resizable="false" text="Symbol" />
+            <TableColumn fx:id="c_party" editable="false" prefWidth="250.0" text="Party" />
+            <TableColumn fx:id="c_vote" editable="false" prefWidth="120.0" text="Vote" />
+            <TableColumn fx:id="c_id" editable="false" prefWidth="100.0" text="ID" />
+        </columns>
+      </TableView>
+      
+   </children>
+</AnchorPane>
